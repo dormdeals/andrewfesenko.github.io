@@ -23,6 +23,41 @@ html,
 body {
 	height: 100%;
 }
+/* Set the default color of the links to grey */
+li a {
+    color: #8D8D93; /* Grey color for default state */
+    text-decoration: none; /* Remove underline if desired */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Define the hover state to change the color to green */
+li a:hover {
+    color: #80D9A9; /* Green color on hover */
+}
+
+body, .main-hero-area, .header-area, .features-area, .contact-area, .footer-area {
+    background: #000 !important; /* Force the background to be black */
+    background-image: none !important; /* Override any background images */
+    color: #fff; /* Set text color to white for readability */
+}
+/* Apply green color to all major headings and navigation links */
+h1, h2, h3, .mainmenu ul li a, .header-btn {
+    color: #80D9A9; /* Green color */
+}
+
+/* Ensure any hover states use the same or a similar shade */
+.mainmenu ul li a:hover, .header-btn:hover {
+    color: #80D9A9;
+}
+
+.header-area:after, 
+.main-hero-area:after, 
+.features-area:after, 
+.contact-area:after, 
+.footer-area:after {
+    content: none !important; /* Ensure no pseudo-elements add a background */
+    background: none !important; /* Remove any additional background */
+}
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -129,13 +164,13 @@ h5.category-title,
 .preview-hero h1,
 .preview-area h1,
 .single-preview h4 a {
-	color: #1a2b3c;
+	color: #8D8D93;
 }
 
 .home1-menu-txt-bg,
 body.home7 .header-area.cta3 a.header-btn:hover,
 .preview-img:after {
-	background: #1a2b3c;
+	background: #8D8D93;
 }
 
 .color-white,
@@ -212,7 +247,7 @@ a.preview-btn,
 .preview-footer-area,
 .preview-footer-area h2 a,
 .preview-footer-area p a {
-	color: #fff;
+	color: #8D8D93;
 }
 
 .color-white,
@@ -289,7 +324,7 @@ a.preview-btn,
 .preview-footer-area,
 .preview-footer-area h2 a,
 .preview-footer-area p a {
-	color: #fff;
+	color: #8D8D93;
 }
 
 .color-white,
@@ -366,7 +401,7 @@ a.preview-btn,
 .preview-footer-area,
 .preview-footer-area h2 a,
 .preview-footer-area p a {
-	color: #fff;
+	color: #8D8D93;
 }
 
 .color-white,
@@ -443,7 +478,7 @@ a.preview-btn,
 .preview-footer-area,
 .preview-footer-area h2 a,
 .preview-footer-area p a {
-	color: #fff;
+	color: #8D8D93;
 }
 
 .home1-theme-color,
@@ -478,7 +513,7 @@ body.home6 div#sticky-wrapper.is-sticky .mainmenu ul li a:hover,
 .blog-page div#sticky-wrapper.is-sticky .header-area .mainmenu ul li.active a,
 .preview-hero a:hover,
 .single-preview:hover h4 a {
-	color: #79c131;
+	color: #80D9A9;
 }
 
 .home1-theme-bg,
@@ -490,7 +525,7 @@ body.home5 div#sticky-wrapper.is-sticky .mainmenu a.header-btn,
 body.home6 div#sticky-wrapper.is-sticky .mainmenu a.header-btn,
 .blog-page div#sticky-wrapper.is-sticky .mainmenu a.header-btn,
 a.preview-btn {
-	background: #79c131;
+	background: #80D9A9;
 }
 
 .home1-hero-txr-para-color,
@@ -509,19 +544,19 @@ body.home7 .single-pricing:hover ul li,
 body.home7 .about-single-content p,
 .single-blog-content p,
 .single-coments-text p {
-	color: #37424f;
+	color: #8D8D93;
 }
 
 .home1-hero-txr-para-bg,
 .single-blog-contact-form form input[type="submit"]:hover,
 .preview-footer-area {
-	background: #37424f;
+	background: #8D8D93;
 }
 
 .section-title-para-color,
 .section-title p,
 .header-area.cta3 ul li a:hover {
-	color: #8492a5;
+	color: #8D8D93;
 }
 
 .bg-white,
@@ -542,12 +577,12 @@ body.home7 .featured-single,
 .blog-page a.header-btn,
 div#sticky-wrapper.is-sticky .header-area:after,
 .preview-hero a:hover {
-	background: #fff;
+	background: #000000;
 }
 
 .featured-content-color,
 .featured-single-text p {
-	color: #bdf8a3;
+	color: #80D9A9;
 }
 
 .screen-slide-color,
@@ -673,16 +708,20 @@ span.blog-search-bar input[type="search"] {
 .contact-form form textarea,
 .contact-form form input::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
-	color: #d6e9c8;
+	color: #80D9A9;
 }
-
+/* .about-area, .features-area, .screenshots-area, .contact-area {
+    border-bottom: 2px solid #80D9A9; /* Green color */
+    padding-bottom: 20px; /* Adjust as needed for spacing */
+    margin-bottom: 20px; /* Adjust for spacing between sections */
+} */
 .contact-input-color,
 .contact-form form input[type="text"],
 .contact-form form input[type="email"],
 .contact-form form textarea,
 .contact-form form input::-moz-placeholder,
 .contact-form textarea::-moz-placeholder {
-	color: #d6e9c8;
+	color: #80D9A9;
 }
 
 .contact-input-color,
@@ -691,7 +730,7 @@ span.blog-search-bar input[type="search"] {
 .contact-form form textarea,
 .contact-form form input:-ms-input-placeholder,
 .contact-form textarea:-ms-input-placeholder {
-	color: #d6e9c8;
+	color: #8D8D93;
 }
 
 .contact-input-color,
@@ -700,14 +739,14 @@ span.blog-search-bar input[type="search"] {
 .contact-form form textarea,
 .contact-form form input::placeholder,
 .contact-form textarea::placeholder {
-	color: #d6e9c8;
+	color: #8D8D93;
 }
 
 .contact-form-input-bg,
 .contact-form form input[type="text"],
 .contact-form form input[type="email"],
 .contact-form form textarea {
-	background: #6eb648;
+	background: #2c3d34;
 }
 
 .home1-menu-txt-bg,
@@ -717,7 +756,7 @@ span.blog-search-bar input[type="search"] {
 
 .responsive-menu-hover-bg,
 .slicknav_nav a:hover {
-	background: #5dad16;
+	background: #000000;
 }
 
 /* ====/========        ===== ==/====/
@@ -753,8 +792,8 @@ a.header-btn {
 	-webkit-transition: .3s;
 	transition: .3s;
 	border-radius: 3px;
-	background-image: -webkit-linear-gradient( 0deg, rgb(150, 210, 80) 0%, rgb(43, 191, 49) 100%);
-	background-image: -ms-linear-gradient( 0deg, rgb(150, 210, 80) 0%, rgb(43, 191, 49) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(128,217,169) 0%, rgb(128,217,169) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(128,217,169) 0%, rgb(128,217,169) 100%);
 }
 
 
@@ -770,8 +809,8 @@ a.header-btn:hover {
 	/*background: url(assets/svg/home1-download-btn-hover.svg);*/
 	padding: 14px 22px;
 	border-radius: 3px;
-	background-image: -webkit-linear-gradient( 0deg, rgb(43, 191, 49) 0%, rgb(150, 210, 80) 100%);
-	background-image: -ms-linear-gradient( 0deg, rgb(43, 191, 49) 0%, rgb(150, 210, 80) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(128,217,169) 0%, rgb(128,217,169) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(128,217,169) 0%, rgb(128,217,169) 100%);
 }
 
 .mainmenu ul {
@@ -935,7 +974,7 @@ ul.drop-menu li a:hover {
 	height: 100%;
 	width: 100%;
 	content: "";
-	background: #fff;
+	background: #212121;
 	opacity: .95;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
 }
@@ -1210,9 +1249,10 @@ body.home1 .about-single-item:hover h4 {
 }
 
 .about-single-item:hover {
-	box-shadow: 0px 15px 25px #d7d7d7;
+	box-shadow: 0px 15px 25px #212121;
 	border-radius: 7px;
 }
+
 
 /* ====/========        ===== ==/====/
            featured css start
@@ -1482,8 +1522,8 @@ body.home1 .screenshot-slide:after{
 	width: 100%;
 	content: "";
 	z-index: -1;
-	background-image: -webkit-linear-gradient(0deg, #96d250 0%, #61c941 60%, #2bbf31 100%);
-	background-image: -ms-linear-gradient(0deg, #96d250 0%, #61c941 60%, #2bbf31 100%);
+	background-image: -webkit-linear-gradient(0deg, #2c3d34 0%, #2c3d34 60%, #2c3d34 100%);
+	background-image: -ms-linear-gradient(0deg, #2c3d34 0%, #2c3d34 60%, #2c3d34 100%);
 }
 
 .contact-form form input[type="text"],
@@ -1522,14 +1562,14 @@ body.home1 .screenshot-slide:after{
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 	border-radius: 3px;
-	background-image: -webkit-linear-gradient(0deg, #fc826d 0%, #fea268 60%, #ffc163 100%);
-	background-image: -ms-linear-gradient(0deg, #fc826d 0%, #fea268 60%, #ffc163 100%);
+	background-image: -webkit-linear-gradient(0deg, #2c3d34 0%, #2c3d34 60%, #2c3d34 100%);
+	background-image: -ms-linear-gradient(0deg, #2c3d34 0%, #2c3d34 60%, #2c3d34 100%);
 }
 
 
 body.home1 .contact-form form input[type="submit"]:hover {
-	background-image: -webkit-linear-gradient( 0deg, rgb(255, 193, 99) 0%, rgb(254, 162, 104) 40%, rgb(252, 130, 109) 100%);
-	background-image: -ms-linear-gradient( 0deg, rgb(255, 193, 99) 0%, rgb(254, 162, 104) 40%, rgb(252, 130, 109) 100%);
+	background-image: -webkit-linear-gradient( 0deg,  #2c3d34 0%, #2c3d34 60%, #2c3d34 100%);
+	background-image: -ms-linear-gradient( 0deg, #2c3d34 0%, #2c3d34 40%, #2c3d34 100%);
 
 
 }
@@ -1609,6 +1649,7 @@ body.home1 .contact-form form input[type="submit"]:hover {
 	padding-bottom: 70px;
 }
 
+
 @media (max-width: 767px) {
 	.footer-area {
 		padding-top: 100px;
@@ -1668,7 +1709,7 @@ body.home1 .contact-form form input[type="submit"]:hover {
 }
 
 .footer-social-icon a {
-	color: #afb3b9;
+	color: #80D9A9;
 	margin: 0px 6px;
 	font-size: 20px;
 }
